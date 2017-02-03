@@ -2,9 +2,31 @@
 @import "fonts";
 @import "reset";
 @import "default-clases";
+@import "sprite";
+@include sprites($spritesheet-sprites);
 @import "layout";
 
+.inner{
+	height: calc( 100vh - 80px );
+	background: url('../img/inner-bg.jpg') no-repeat top center;
+	background-size: cover;
+	text-align: center;
 
+	.inner-block{
+    	color: #fff;
+    	h1{
+    		font-size: 72px;
+    		font-weight: 700;
+    		padding-top: 170px;
+    	}
+    	& > span{
+    		font-size: 28px;
+    		font-weight: 300;
+    		display: block;
+    		padding-top: 28px;
+    	}
+	}
+}
 
 
 
