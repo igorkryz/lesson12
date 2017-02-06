@@ -7,6 +7,7 @@
 @import "layout";
 
 .inner{
+	@extend %vertical-align;
 	height: calc( 100vh - 80px );
 	background: url('../img/inner-bg.jpg') no-repeat top center;
 	background-size: cover;
@@ -17,17 +18,40 @@
     	h1{
     		font-size: 72px;
     		font-weight: 700;
-    		padding-top: 170px;
-    	}
+    	  }
     	& > span{
     		font-size: 28px;
     		font-weight: 300;
     		display: block;
     		padding-top: 28px;
     	}
+    	.inner-form{
+    		margin-top: 40px;
+         	padding: 25px 37px;
+         	background: rgba(0, 0, 0, .45);
+         	.first-form{
+         		.form-control{
+         			width: 325px;
+         		}
+
+         	}
+            input, select{
+            	&+input{
+            		margin-left: 4px;
+            	}
+            }
+    	}
 	}
 }
-
+.service-wrap{
+  overflow: hidden;	
+  padding: 55px 0 70px 0;
+.service-item{
+    float: left;
+    padding: 0 10px;
+    width: 33.3333%;
+  }
+}
 
 
 

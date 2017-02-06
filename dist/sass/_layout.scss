@@ -3,21 +3,62 @@
 .container{
 	width: $desktopContainerWidth;
 	margin: 0 auto;
+	padding: 0 10px;
+}
+.row{
+	margin: 0 -10px;
 }
 .icon{
 	display: inline-block;
 }
+// standart form element style 
+.form-control{
+	display: inline-block;
+	height: 57px;
+	padding: 0 15px;
+	border-radius: 2px;
+	color: $formControlTextColor;
+	font-style: 16px;
+}
+.form-btn{
+	display: inline-block;
+	height: 57px;
+	border-radius: 2px;
+	color: #fff;
+	font-weight: 600;
+	background: $generalOrange;
+	padding: 0 27px;
+	font-size: 16px;
+	text-transform: uppercase;
+	&:hover{
+    	color: $generalOrangeHover;
+	}
+}
+.simple-text-block{
+	padding: 27px 0;
+	font-size: 18px;
+	color: $simpleTextColor;
+	border-bottom: 1px solid  #e4ebec;
+}
+
 .header{
 	height: $desktopHeaderHeight;
 	width: 100%;
 	background: #fff;
 	.logo{
 		float: left;
+		padding-top: 15px;
 	}
 	.header-nav{
 		float: right;
+		padding: 27px 200px 0 0;
+		 li+li+li{
+        padding-right: 0px;
+		}
 		li{
 			display: inline-block;
+			padding-right: 28px;
+
 			a{
 				font-size: 16px;
 				&:hover{
