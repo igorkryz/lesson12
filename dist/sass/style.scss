@@ -5,6 +5,7 @@
 @import "sprite";
 @include sprites($spritesheet-sprites);
 @import "layout";
+@import "slick";
 
 .inner{
 	@extend %vertical-align;
@@ -77,17 +78,30 @@
 		margin: 50px 0;
 		overflow: hidden;
 	}
+	.carousel-header{
+		h1{
+		font-size: 24px;
+		line-height: 60px;
+		color: #515a60l;
+		font-weight: 300;
+	}
+	}
+		
+	
 	.news-post{
 		width: 33.3333%;
 		float: left;
-		& + .news-post{
+	}
+
+	& + .news-post{
 			padding-left: 25px;
-		}
-		.news-content{
+          }
+    .news-content{
 			background: #fff;
 			border-top: 6px solid #90bed5;
 			border-radius: 1px;
 			padding: 20px;
+			height: 240px;
 			& > .title{
             	font-size: 20px;
             	line-height: 26px;
@@ -100,10 +114,11 @@
 				margin: 12px 0;
 			}
 
+
 		}
 	}
-}
 
+}
 
 
 
