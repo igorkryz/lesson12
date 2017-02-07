@@ -223,7 +223,7 @@ button {
   -webkit-border-radius: 2px;
           border-radius: 2px;
   color: #7e878d;
-  font-style: 16px; }
+  font-size: 16px; }
 
 .form-btn {
   display: inline-block;
@@ -390,7 +390,7 @@ button {
   .category-wrap .news-row {
     margin: 50px 0;
     overflow: hidden; }
-  .category-wrap .carousel-header {
+  .category-wrap .carousel-header h1 {
     font-size: 24px;
     line-height: 60px;
     color: #515a60l;

@@ -78,14 +78,7 @@
 		margin: 50px 0;
 		overflow: hidden;
 	}
-	.carousel-header{
-		h1{
-		font-size: 24px;
-		line-height: 60px;
-		color: #515a60l;
-		font-weight: 300;
-	}
-	}
+}
 		
 	
 	.news-post{
@@ -119,6 +112,12 @@
 	}
 
 }
-
+.carousel{
+	.carousel-header{
+	   font-size: 24px;
+	   line-height: 60px;
+	   color: #515a60;
+	  }
+}
 
 
