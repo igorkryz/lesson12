@@ -84,11 +84,10 @@
 	.news-post{
 		width: 33.3333%;
 		float: left;
-	}
-
-	& + .news-post{
+		& + .news-post{
 			padding-left: 25px;
           }
+      }
     .news-content{
 			background: #fff;
 			border-top: 6px solid #90bed5;
@@ -109,15 +108,32 @@
 
 
 		}
-	}
+	
 
-}
+
 .carousel{
 	.carousel-header{
 	   font-size: 24px;
-	   line-height: 60px;
+	   font-weight: 400;
 	   color: #515a60;
 	  }
+	.autoplay{
+		margin-top: 20px;
+		border-top: 1px solid #e2e6e7;
+		border-bottom: 1px solid  #e2e6e7;
+        ul{
+			li{
+				display: inline-block;
+				padding: 15px 0;
+				font-size: 16px;
+				color: $generalOrange;
+				& + li{
+				padding-left: 27px;
+			    }
+		      }  
+	      }
+       }
 }
+
 
 
