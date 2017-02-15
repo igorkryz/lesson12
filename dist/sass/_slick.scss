@@ -93,6 +93,53 @@
         border: 1px solid transparent;
     }
 }
+.slick-arrow{
+    position: absolute;
+    top: 40%;
+    background: transparent;
+    border: none;
+    color: transparent;
+    height: 24px;
+    width: 14px;
+    &::before, &::after{
+        content:'';
+        display: inline-block;
+        width: 15px;
+        height: 3px;
+        background: $generalOrange;
+        position: absolute;
+    }
+}
+
+    .slick-prev{
+        left: 0;
+        &::before{
+            top: 0;
+            left: 0;
+            transform: rotate(-45deg);
+
+        }
+        &::after{
+           bottom: 11px;
+           left: 0;
+           transform: rotate(45deg); 
+        }
+    }
+    .slick-next{
+        right: 0;
+         &::before{
+            top: 0;
+            left: 0;
+            transform: rotate(45deg);
+
+        }
+        &::after{
+           bottom: 11px;
+           left: 0;
+           transform: rotate(-45deg); 
+        }
+    }
+
 .slick-arrow.slick-hidden {
     display: none;
 }
